@@ -1,6 +1,5 @@
-# Classroom Databases with Neo4j
-
-This repository provides a setup for working with Neo4j, a graph database, specifically for modeling classroom data. Follow the instructions below to set up and interact with the Neo4j instance.
+# Neo4j - Graph Database
+A Neo4j graph database stores data as nodes, relationships, and properties instead of in tables or documents. 
 
 ## Getting Started
 
