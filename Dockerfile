@@ -2,7 +2,7 @@
 FROM neo4j:5.12
 
 # Set environment variables for authentication
-ENV NEO4J_AUTH=neo4j/test123
+ENV NEO4J_AUTH=neo4j/testpassword123
 
 # Copy the initialization Cypher script
 COPY init.cypher /var/lib/neo4j/import/init.cypher
