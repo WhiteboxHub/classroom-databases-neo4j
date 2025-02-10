@@ -93,7 +93,6 @@ RETURN c.name, COUNT(s) AS student_count;
 MATCH (s:Student {name: "Alice"})
 DETACH DELETE s;
 ```
-
 ---
 
 ## License
