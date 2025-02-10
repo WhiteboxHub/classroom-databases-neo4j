@@ -7,5 +7,5 @@ ENV NEO4J_AUTH=neo4j/test123
 # Copy the initialization Cypher script
 COPY init.cypher /var/lib/neo4j/import/init.cypher
 
-# Run the initialization script on startup
-CMD ["neo4j"]
+# Start Neo4j and then execute the script
+CMD ["bash", "-c", "neo4j start && sleep 10 && cypher-shell -u neo4j -p test123 -f /var/lib/neo4j/import/init.cypher && tail -f /dev/null"]
