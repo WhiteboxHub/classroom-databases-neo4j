@@ -44,6 +44,7 @@ Download and install [Neo4j Desktop](https://neo4j.com/download/) for a graphica
 To initialize the Neo4j instance with predefined data or schema, you can run the following command to execute a Cypher script (init.cypher):
 
 ```bash
+
 cypher-shell -u neo4j -p testpassword123 -a bolt://localhost:7687 < ./init.cypher
 ```
 ---
@@ -71,6 +72,7 @@ RETURN c.name;
 ```cypher
 MATCH (s:Subject)<-[:BELONGS_TO]-(c:Course)
 RETURN s.name AS Subject, COLLECT(c.name) AS Courses;
+
 ```
 
 ### 5. Add a New Student and Enroll in a Course
