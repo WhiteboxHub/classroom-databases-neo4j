@@ -25,7 +25,6 @@ There are multiple ways to connect to the Neo4j instance:
    - **Username:** `neo4j`
    - **Password:** `test123`
 
-
 ### B. Cypher Shell
 The Cypher Shell is a command-line tool for interacting with the Neo4j database.
 
@@ -34,19 +33,12 @@ If you don't have it installed, download it from the official [Neo4j Cypher Shel
 
 #### Connect via Cypher Shell
 ```sh
-cypher-shell -a bolt://localhost:7687 -u neo4j -p testpassword123 
+cypher-shell -a bolt://localhost:7687 -u neo4j -p test123
 ```
 
 ### C. Neo4j Desktop
 Download and install [Neo4j Desktop](https://neo4j.com/download/) for a graphical interface to manage your database.
 
-## Importing Data Using Cypher Shell
-To initialize the Neo4j instance with predefined data or schema, you can run the following command to execute a Cypher script (init.cypher):
-
-```bash
-
-cypher-shell -u neo4j -p testpassword123 -a bolt://localhost:7687 < ./init.cypher
-```
 ---
 
 ## Queries Covering Neo4j Concepts
