@@ -41,6 +41,12 @@ Download and install [Neo4j Desktop](https://neo4j.com/download/) for a graphica
 
 ---
 
+## Importing Data Using Cypher Shell
+To initialize the Neo4j instance with predefined data or schema, you can run the following command to execute a Cypher script (init.cypher):
+```bash
+cypher-shell -u neo4j -p testpassword123 -a bolt://localhost:7687 < ./init.cypher
+```
+
 ## Queries Covering Neo4j Concepts
 
 ### 1. Fetch All Nodes and Relationships
